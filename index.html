@@ -47,39 +47,127 @@
 					#slidearea{
 						width:1520px;
 						height:504px;
+						overflow:hidden;
 					}
+					
+					figure{
+						position:relative;
+						left:0;
+						width:400%;
+						animation:10s slide infinite;
+					}
+
+					.slide{
+						position:relative;
+						width:25%;
+						float:left;
+					}
+					.slide img{
+						width:100%;
+						height:100%;
+						
+					}
+					
+					@keyframes slide{
+						0%{
+							left:0;
+						}
+						10%{
+							left:0;
+						}
+						20%{
+							left:-100%;
+						}
+						30%{
+							left:-100%;
+						}
+						40%{
+							left:-200%;
+						}
+						50%{
+							left:-200%;
+						}
+						55%{
+							left:-300%;
+						}
+						65%{
+							left:-300%;
+						}
+						66%{
+							left:-200%;
+						}
+						74%{
+							left:-200%;
+						}
+						75%{
+							left:-100%;
+						}
+						85%{
+							left:-100%;
+						}
+						90%{
+							left:0;
+						}
+						100%{
+							left:0;
+						}
+					}
+
 					#desarea{
 						width:1520px;
 						height:120px;
 						background:#130846;
 					}
 						#des1{
-							width:30%;
-							height:100%;
+							width:456px;
+							height:120px;
 							float:left;
 						}
 						#des2{
-							width:40%;
-							height:100%;
+							width:608px;
+							height:120px;
 							float:left;
+						
 						}
 						#des2 img{
-							width:5px;
-							height:5px;
+							width:50px;
+							height:50px;
 							float:left;
+							padding-top:10px;
+							margin:0 30px;
+										
 						}
+						#des2 ul li img:first-child{
+							margin-left:none;
+							color:blue;
+						}
+						#des2 ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+						}
+						#des2 ul li{
+							float:left;
+							margin-left:30px;
+							color:white;
+						}
+						
 						#des3{
-							width:30%;
+							width:456px;
 							height:100%;
 							float:left;
 						}
-						#desarea img{
+						#des3 p{
+							font-size:30px;
+							color:white;
+							text-align:center;
+						}
+						#des1 img{
 							width:260px;
 							height:70%;
 							float:left;
-							padding:0;
-							margin-left:60px;
-							margin-top:20px;
+							padding-left:60px;
+							padding-top:20px;
 						}
 					#offerarea{
 						width:1520px;
@@ -88,10 +176,9 @@
 					}
 					#boxarea{
 						width:1520px;
-						height:560px;
-						background:white;
-						
+						height:560px;	
 					}
+					
 
 						#b1{
 							width:350px;
@@ -99,18 +186,21 @@
 							float:left;
 							padding-top:35px;
 							padding-left:30px;
+							background:white;
 						}
 							#b1 ul li{
-							list-style:none;
-							text-align:left;
+								list-style:none;
+								text-align:left;
 							}
+		
 							#b1 ul li a:link,#b1 a:visited{
-							color:grey;
-							text-decoration:none;
+								color:grey;
+								text-decoration:none;
 							}
 							#b1 ul li a:hover{
-							color:black;
+								color:black;
 							}
+							
 						#b2{
 							width:360px;
 							height:430px;
@@ -123,31 +213,40 @@
 							width:760px;
 							height:560px;
 							float:left;
+
+						}
+						#b3 img{
+							width:100%;
+							height:100%;
+						}
+						iframe{
+							border:0;
+							width:100%;
+							height:100%;
 						}
 					#poparea{
 						width:1520px;
-						height:152px;
+						height:100px;
 						background:white;
 					}
 
 					#location{
 						width:1520px;
-						height:472px;
+						height:485px;
 						background:white;
 						overflow:hidden;
 					}
 					#location img{
 						margin-left:124px;
 						margin-right:124px;
-						float:left;
-					/*	transform:scale(1.3,1.3);	*/
-						
+						float:left;	
 					}
 						#l1{
 							width:303px;
 							height:400px;
 							float:left;
 							margin-right:15px;
+							
 							
 						}
 						#l2{
@@ -163,43 +262,63 @@
 							margin-right:15px;
 						}
 						#l4{
-							width:308px;
+							width:303px;
 							height:400px;
 							float:left;
 							margin-right:15px; 
 						}
+						.l{
+							width:303px;
+							height:76px;
+							float:left;
+							box-shadow: -2px 7px 16px -2px rgba(0,0,0,0.45);
+							margin-left:124px;
+						}
+						.l p{
+							padding-left:15px;
+							font-size:23px;
+							float:left;
+						}
+						.l h1{
+							background:#AE7C3A;
+							font-size:15px;	
+							color:white;
+							font-family: 'Barlow Condensed', sans-serif;
+							font-family: 'Kanit', sans-serif;
+							border-radius:5px;
+							text-align:center;
+							padding:6px 0;		
+							margin:20px 10px 60px 150px;	
+						}
 	
 					#happening{
 						width:1520px;
-						height:152px;
+						height:48px;
 						background:white;
 					}
 
 					#timing{
 						width:1520px;
 						height:48px;
-						background:blue;
+						
 					}
 						#t1{
 							width:50%;
 							height:48px;
-							background:skyblue;
+							
 							float:left;
 						}
 						#t2{
 							width:50%;
 							height:48px;
-							background:skyblue;
+							
 							float:left;
 						}
 					#darea{
 						width:1520px;
 						height:480px;
-						background:white;	
+						float:left;	
 					}
-						#darea img{
-							float:left;	
-						}
 						#d1{
 							width:614px;
 							height:480px;
@@ -212,17 +331,41 @@
 							height:480px;
 							float:left;
 							margin-right:124px;
-							margin-left:22px;	
+							margin-left:22px;
+								
+						}
+						#d11{
+							width:614px;
+							height:125px;
+							float:left;
+							box-shadow: 0px 13px 16px -10px rgba(0,0,0,0.45);
+							
+							}
+						#d12{
+							width:614px;
+							height:125px;
+							float:left;
+							box-shadow: 0px 13px 16px -10px rgba(0,0,0,0.45);
+							}
+						#darea p{
+							padding-left:25px;
+							padding-top:10px;
 						}
 					#explore{
 						width:1520px;
-						height:136px;
-						background:blue;
+						height:166px;
+						
 						overflow:hidden;
+					}
+					#explore p{
+						padding-left:280px;
+						padding-right:280px;
+						padding-top:20px;
 					}
 					#viewarea{
 						width:1520px;
 						height:572px;
+						
 					}
 						#v1area{
 							width:1480px;
@@ -231,16 +374,28 @@
 							margin-left:20px;
 							margin-right:20px;	
 						}
+						#viewarea p{
+								padding-left:20px;
+								padding-top:15px;
+								}
 							.v1{
-								width:370;
+								width:370px;
 								height:286px;
 								float:left;
-								
+								overflow:hidden;	
 							}
 							.b2{
 								background:#F5F5F5;
 							}
-						
+							.v1 img{
+								display:block;
+								transition:1s;	
+							}
+					
+						.v1 img:hover{
+							scale:1.1;
+							
+						}
 						#v2area{
 							width:1480px;
 							height:286px;
@@ -248,9 +403,24 @@
 							margin-left:20px;
 							margin-right:20px;
 						}
+				.details{
+					position:absolute;
+					bottom:-30px;
+					width:100%;
+					text-align:center;
+					padding:10px 0;
+					color:white;
+					background:linear-gradient(to bottom,transparent,black);
+					display:block;
+					transition:all 2s;	
+				}
+				.v1:hover.details{
+					display:block;
+					bottom:0;
+				}
 					#service{
 						width:1520px;
-						height:190px;
+						height:100px;
 						background:white;
 					}
 					#gallery{
@@ -313,28 +483,110 @@
 								width:332px;
 								height:220px;
 								float:left;
-								margin-right:124px;
-								
+								margin-right:124px;	
 							}
-
 					#brand{
 						width:1520px;
-						height:171px;
-						background:blue;
+						height:95px;
+						
+					
 					}
 					#spotarea{
 						width:1520px;
-						height:500px;
-						background:skyblue;
+						height:500px;	
+						float:left;
+						overflow:hidden;
 					}
-						.s1{
+						#s1{
+							width:380px;
+							height:500px;
+							float:left;
+							background-image:url('tajh.png');
+							overflow:hidden;
+							position:relative;
+								
+						}
+						#s1 img{
+							width:100%;
+							height:100%;
+						}
+							#s11{
+								width:380px;
+								height:500px;
+								float:left;
+								position:relative;
+								transition:all 3s;
+								overflow:hidden;	
+							}
+							#s11:hover{
+								background:red;
+								transform:translate(0,-100%);
+								display:block;
+							}
+						#s2{
+							width:380px;
+							height:500px;
+							float:left;
+							background-image:url('selh.png');
+							position:relative;
+							overflow:hidden;	
+						}
+							#s22{
+								width:380px;
+								height:500px;
+								float:left;
+								transition:all 3s;
+								position:relative;
+								overflow:hidden;			
+							}
+							#s22:hover{
+								transform:translate(0,-100%);
+							}
+							
+
+						#s3{
+							width:380px;
+							height:500px;
+							float:left;
+							background-image:url('vivh.png');
+							overflow:hidden;
+							position:relative;
+						}
+							#s33{
+								width:380px;
+								height:500px;
+								float:left;
+								position:relative;
+								transition:all 3s;
+								overflow:hidden;							}
+							#s33:hover{
+								transform:translate(0,-100%);
+							}
+						#s33{
 							width:380px;
 							height:500px;
 							float:left;
 							
-							background-image:url('tajh.png');
 						}
-						.s1:hover{
+						#s4{
+							width:380px;
+							height:500px;
+							float:left;
+							background-image:url('vivh.png');
+							overflow:hidden;
+							position:relative;
+							
+						}
+						#s44{
+							width:380px;
+							height:500px;
+							float:left;
+							position:relative;
+							transition:all 3s;
+							overflow:hidden;							}
+						#s44:hover{
+							transform:translate(0,-100%);
+							}
 							
 						}
 					#blank{
@@ -346,10 +598,84 @@
 						width:1520px;
 						height:475px;
 						background:#EFEEEE;
+						float:left;
 					}
-
-				
+						#dis1{
+							width:1395px;
+							height:68px;
+							float:left;
+							padding-left:125px;
+						}
+						#dis2{
+							width:1520px;
+							height:271px;
+							float:left;
+						}
+							#dis21
+								{
+									width:291px;
+									height:271px;
+									float:left;
+									padding-left:85px;
+								}
+							#discription ul li{
+								list-style:none;	
+							}
+							#discription ul li a:link,#discription ul li a:visited{
+								text-decoration:none;
+								color:black;
+							}
+							#dis22{
+									width:252px;
+									height:271px;		
+									float:left;	
+							}
+							#dis23{
+									width:252px;
+									height:271px;	
+									float:left;	
+							}
+							#dis24{
+									width:252px;
+									height:271px;
+									float:left;			
+							}
+						#dis3{
+							width:1520px;
+							height:136px;
+							float:left;
+						}
+							#dis31{
+								width:50%;
+								height:136px;
+								
+								float:left;
+							}
+							#dis32{
+								width:50%;
+								height:136px;
+								
+								float:left;
+							}	
+								#dis32 ul{
+									list-style:none;
+								}	
+								#dis32 ul li{
+									padding:10px;
+									float:left;		
+								}
+							#dis31 p{
+								padding-left:124px;
+								margin-top:0;
+							}
+							#dis32 p{
+								padding-left:50px;
+							}	
 		</style>
+    <link rel="stylesheet" href="animate.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&family=Kanit:wght@100&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div id="mainarea">
@@ -409,23 +735,80 @@
 					</ul>	
 				</div>
 			</div>
-			<div id="slidearea">
-				<img src="s1.jpeg" width="100%" height="100%"/>
+			<div id="slidearea">		
+				<figure>
+					<div class="slide">	
+						<img src="s1.jpeg"  width="100%" height="100%" alt="">
+					</div>
+					<div class="slide">	
+						<img src="s2.jpeg" width="100%" height="100%" alt="">
+					</div>
+					<div class="slide">	
+						<img src="s3.jpeg" width="100%" height="100%"  alt="">
+					</div>
+					<div class="slide">	
+						<img src="s4.jpeg" width="100%" height="100%" alt="">
+					</div>
+				</figure>
 			</div>
 			<div id="desarea">
 				<div id="des1">
 					<img src="neu.png"/>
 				</div>
 				<div id="des2">
-					<img src="exclusive.png"/>
-					<img src="special.png"/>
-					<img src="earn.png"/>
-					<img src="min.png"/>
+	
+						<ul>
+						<li>	
+							<img src="exclusive.png"/>
+								<br>
+									Exclusive
+									<br>			
+									Member Rates
+								
+						</li>
+						<li>	
+								<img src="special.png"/>
+								<br>
+								<br>
+								<br>
+									Special Offers on
+									<br>
+									Stays & Dining
+								
+						</li>
+						<li>
+								<img src="earn.png"/>
+								<br>
+								<br>
+								<br>
+									Earn and Redeem
+									<br>
+									across multiple
+									</br>
+									brands
+								
+						</li>
+						<li>
+								<img src="min.png"/>
+								<br>
+								<br>
+								<br>
+								
+									Minimum NeuCoins
+									<br>
+									with every booking
+									<br>
+									1 NeuCoin = ₹ 1
+								
+						</li>
+
+						</ul>
 				</div>
 				<div id="des3">
-				
+					<p>BECOME A MEMBER!</p>
+					<hr width=80%px>
+
 				</div>
-				
 			</div>
 			<div id="offerarea">
 				<font size="23px"><p align="center" valign="center">OFFERS & PROMOTIONS<p></font>
@@ -435,7 +818,7 @@
 					<font size="5px">
 					<ul>
 						<li>
-							<a href="#">
+							<a href="b3.jpeg" target="op" width="100%" height="100%">
 								Celebrating our bond
 							</a>
 						</li>
@@ -443,35 +826,35 @@
 						<br>
 
 						<li>
-							<a href="#">
+							<a href="urban1.jpeg" target="op" width="100%" height="100%">
 								Urban Getaways
 							</a>
 						</li>
 						<br>
 						<br>
 						<li>
-							<a href="#">
+							<a href="member.jpeg" target="op">
 								Member Exclusive Offer
 							</a>
 						</li>
 						<br>
 						<br>
 						<li>
-							<a href="#">
+							<a href="care.jpeg" target="op">
 								Carecations
 							</a>
 						</li>
 						<br>
 						<br>
 						<li>
-							<a href="#">
+							<a href="suit.jpeg" target="op">
 								Suite Surprises
 							</a>
 						</li>
 						<br>
 						<br>
 						<li>
-							<a href="#">
+							<a href="stay.jpeg" target="op">
 								Stay a Bit Longer
 							</a>
 						</li>
@@ -480,7 +863,7 @@
 				</div>
 				<div id="b2">
 					<font size="5px">
-						<p align="cemter">CELEBRATING OUR BOND</p>
+						<a<p align="cemter">CELEBRATING OUR BOND</p>
 					</font>
 					<font size="4px">
 						<p align="cemter">Celebrating our bond</p>
@@ -488,9 +871,12 @@
 					<font size="4px" color="#C48C48">
 						<p align="cemter">VALID TILL 30 NOV 2023</p>
 					</font>
+					<iframe src=""  width="100%" height="100%" name="ot">
+					</iframe>
 				</div>
 				<div id="b3">
-					<img src="b3.jpeg" width="100%" height="100%"/>
+					<iframe src="b3.jpeg"  width="100%" height="100%" name="op">
+					</iframe>	
 				</div>
 			</div>
 			<div id="poparea">
@@ -499,17 +885,39 @@
 			<div id="location">
 				<div id="l1">
 					<img src="l1.jpeg" width="100%" height="100%"/>
+					<div class="l">
+							<p>Mumbai</p>
+							<h1>VIEW DETAIL</h1>
+					</div>
 				</div>
 				<div id="l2">
 					<img src="l2.jpeg" width="100%" height="100%"/>
+					<div class="l">
+						 <font size="5px">
+							<p>Goa</p>
+							<h1>VIEW DETAIL</h1>
+						</font>
+					</div>
 				
 				</div>
 				<div id="l3">
 					<img src="l3.jpeg" width="100%" height="100%"/>
+					<div class="l">
+						 <font size="5px">
+							<p>New Delhi</p>
+							<h1>VIEW DETAIL</h1>
+						</font>
+					</div>
 				
 				</div>
 				<div id="l4">
 					<img src="l4.jpeg" width="100%" height="100%"/>
+					<div class="l">
+						 <font size="5px">
+							<p>Jaipur</p>
+							<h1>VIEW DETAIL</h1>
+						</font>
+					</div>
 				
 				</div>
 			</div>
@@ -527,18 +935,43 @@
 			<div id="darea">
 				<div id="d1">
 					<img src="d1.jpeg" width="100%" height="352px"/>
+					<div id="d11">
+						<p>
+							<font size="5px">
+								Taj Guras Kutir Resort & Spa
+							</font>
+							<br>
+							<font size="3px">
+								Gangtok
+							</font>
+						</p>
+					</div>
 				</div>
 				<div id="d2">
 					<img src="d2.jpeg" width="100%" height="352px"/>
+					<div id="d12">
+						<p>
+							<font size="5px">
+								Taj The Trees
+							</font>
+							<br>
+							<font size="3px">
+								Mumbai
+							</font>
+						</p>
+					</div>
 				</div>
 			</div>
 			<div id="explore">			
-				<font size="18px"><p align="center" valign="top">EXPLORE TAJ<p></font>
-				<font size="5px">
-						<p align="center">
-							Descend into a world that was once the sole preserve of 														royalty, step onto the soft, white sand beaches at a secluded island or discover the 											hidden secrets of mist-draped hills with Taj
-						<p>
-				</font>
+				<p align="center">	
+					<font size="8px">
+						EXPLORE TAJ
+					</font>
+					<br>
+					<font size="4px">		
+							Descend into a world that was once the sole preserve of 														royalty, step onto the soft, white sand beaches at a secluded island or discover the 											hidden secrets of mist-draped hills with Taj	
+					</font>
+				</p>
 			</div>	
 			<div id="viewarea">
 				<div id="v1area">
@@ -546,20 +979,75 @@
 						<img src="beach.png" width="100%" height="100%"/>
 					</div>
 					<div class="v1 b2">
+						<font size="4px">
+							<p align="left">
+								BEACH RETREATS
+							</p>
+							<p align="left">
+								Wake up to the sound of waves lapping lazily at the shore. Uncover serenity and marvel at the wealth of 								beauty within the glittering blue seas. Give in to the siren song of the sun, sand and surf with Beach 									Retreats.
+							</p>
+							<font color=#AA7938>
+								<p align="left">
+									VIEW DETAILS 
+								</p>
+							</font>
+						</font>
 					</div>
 					<div class="v1">
 						<img src="hill.png" width="100%" height="100%"/>
 					</div>
 					<div class="v1 b2">
+						<font size="4px">
+							<p align="left">
+								HILL STATIONS
+							</p>
+							<p align="left">
+								Gaze at the mist rolling in over the hill-tops from your luxurious villa. Marvel at glorious sunsets that 								will take your breath away from a private deck.
+							</p>
+							<font color=#AA7938>
+								<p align="left">
+									VIEW DETAILS 
+								</p>
+							</font>
+						</font>
+
 					</div>
 				</div>
 				<div id="v2area">
 					<div class="v1 b2">
+						<font size="4px">
+							<p align="left">
+								ROYAL INDIA
+							</p>
+							<p align="left">
+								Wander through the storied halls of a fairy tale palace, where dreams come to life. Retreat into your 									majestic suite, inspired by elegance.
+							</p>
+							<font color=#AA7938>
+								<p align="left">
+									VIEW DETAILS 
+								</p>
+							</font>
+						</font>
 					</div>
 					<div class="v1">
 						<img src="royal.png" width="100%" height="100%"/>
 					</div>
 					<div class="v1 b2">
+					<div class="v1 b2">
+						<font size="4px">
+							<p align="left">
+								URBAN GETAWAYS
+							</p>
+							<p align="left">
+								There is magic to be found in the energy of a bustling city. Where vibrant markets offer you everything you 								could imagine and centuries of history hide in the most unassuming places. Discover the world’s most 									spectacular urban hubs.
+							</p>
+							<font color=#AA7938>
+								<p align="left">
+									VIEW DETAILS 
+								</p>
+							</font>
+						</font>
+					</div>
 					</div>
 					<div class="v1">
 						<img src="urban.jpeg" width="100%" height="100%"/>
@@ -600,28 +1088,200 @@
 				</div>
 			</div>
 			<div id="brand">
-				<font size="23px"><p align="center" valign="middle">OUR BRANDS<p></font>	
+				<font size="23px">
+					<p align="center" valign="middle">
+						OUR BRANDS
+					<p>
+				</font>	
 			</div>
 			<div id="spotarea">
-				<div class="s1">
+				<div id="s1">
+					<div id="s11">
 						<img src="taj1.png" width="100%" height="100%"/>
+					</div>
 				</div>
-				<div class="s1">
+				<div id="s2">
+					<div id="s22">
 						<img src="seleqtion.png" width="100%" height="100%"/>
+					</div>
 				</div>
-				<div class="s1">
+				<div id="s3">
+					<div id="s33">
 						<img src="vivnata1.png" width="100%" height="100%"/>
+					</div>
 				</div>
-				<div class="s1">
+				<div id="s4">
+					<div id="s44">
 						<img src="ginger2.png" width="100%" height="100%"/>
+					</div>
 				</div>	
 			</div>
 			<div id="blank">
 				
 			</div>
 			<div id="discription">
+				<div id="dis1">
+					<font size="4px">
+						<p>Destinations</p>
+					</font>
+				</div>
+				<div id="dis2">
+					<hr width="84%">
+					<div id="dis21">
+					<ul>
+						<li>
+							
+								Airline & Frequent Flyer Partners
+							
+						</li>
+						<br>
+						<li>
+							
+								Taj Magazine
+							
+						</li>
+						<br>
+						<li>
+							
+								J Wellness Circle
+							
+						</li>
+						<br>
+						<li>
+
+								Site Map
+							
+						</li>
+						<br>
+						<li>
+							
+								Terms Of Use
+							
+						</li>
+						<br>
+						<li>
+						
+								Contact Us
+							
+						</li>
+						<br>
+						<li>
+						
+								Loyalty
+							
+						</li>
+					</ul>
+					</div>
+					
+					<div id="dis22">
+					<ul>
+						<li>	
+								Accessibility
+						</li>
+						<br>
+						<li>	
+								Languages
+						</li>
+						<br>
+						<li>
+								Privacy Policy
+						</li>
+						<br>
+						<li>
+								Press Room
+						</li>
+						<br>
+						<li>	
+								Careers
+						</li>
+						<br>
+						<li>	
+								Blogs
+						</li>
+					</ul>
+					</div>
+					<div id="dis23">
+					<font size="2px">
+					<ul>
+						<li>	
+								SAATHI
+						</li>
+						<br>
+						<li>
+								NIDHI
+						</li>
+						<br>
+						<li>
+								UTSAV
+						</li>
+						<br>
+						<li>
+								INCREDIBLE INDIA FILM
+						</li>
+						<br>
+
+					</ul>
+					</font>	
+					</div>
+					<div id="dis24">
+					<font size="4px">
+					<ul>
+						<li>	
+								Join our newsletter
+
+						</li>
+
+					</ul>
+					</font>	
+					</div>
+				</div>
+				<br>
+				<hr width="84%">
+				<div id="dis3">	
+					<div id="dis31">
+						<font size="10px">
+							<p>
+								<b>
+									IHCL	
+								</b>
+							</p>
+						</font>
+							<p>©2022 The Indian Hotels Company Limited. All Rights Reserved.</p>
+					</div>
+					<div id="dis32">
+						<p>Our Brands:</p>
+						<ul>
+						<li>	
+								<img src="tajd.png" width="50px" height="25px"/>
+						</li>
+						<li>	
+								<img src="seld.png" width="70px" height="35px"/>
+						</li>
+						<li>
+								<img src="vivd.png" width="70px" height="15px"/>
+						</li>
+						<li>
+								<img src="gind.png" width="70px" height="15px"/>
+						</li>
+						<li>	
+								<img src="ama.png" width="60px" height="15px"/>
+						</li>
+						<li>	
+								<img src="mind.png" width="70px" height="25px"/>
+						</li>
+						<li>	
+								<img src="tajd2.png" width="70px" height="25px"/>
+						</li>
+						</ul>
+				
+					</div>
+				</div>
 				
 			</div>
 		</div>
+    <script src="wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
 	</body>
 </html>
